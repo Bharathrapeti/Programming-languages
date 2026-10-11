@@ -1,0 +1,9 @@
+name : bharath
+roll number : 216
+marks : 40
+charan,214,50
+54,8+8,88+
+555,55,66
+babbu
+S,222
+,49.5
