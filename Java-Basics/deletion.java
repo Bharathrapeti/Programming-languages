@@ -11,19 +11,19 @@ class deletion {
         for(int i = 0; i < n ; i++){
             arr[i] = sc.nextInt();
         }
-
+        System.out.println("Elements in the array Before deletion:");
         for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + " ");
+            System.out.println(arr[i] + " ");
         }
         System.out.println("Enter the element to be deleted:");
         int del = sc.nextInt();
         boolean found = false;
         for(int i = 0; i<n ; i++){
             if (arr[i] == del){
+                n--;
                 for(int j = i; j < n - 1; j++){
                     arr[j] = arr[j + 1];
                 }
-                n--;
                 found = true;
                 break;
             }
@@ -31,12 +31,12 @@ class deletion {
         if (found) {
             System.out.println("Elements after deletion:");
             for ( int i =0; i<n; i++){
-                System.out.print(arr[i] + " ");
+                System.out.println(arr[i] + " ");
             }
             System.out.println();
         }
         else {
-            System.out.println("Element not found in the array.");
+            System.out.println("Element not found in the array, Please Enter corret Element.");
         }
     }
 
